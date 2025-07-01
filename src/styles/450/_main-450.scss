@@ -1,0 +1,13 @@
+@media (max-width: 450px) {
+  .container {
+    overflow-x: hidden;
+  }
+
+  .hero {
+    &-content {
+      &::after {
+        background-image: url("../img/hero-320.webp");
+      }
+    }
+  }
+}

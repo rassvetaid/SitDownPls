@@ -1,0 +1,14 @@
+@import "settings/vars";
+@import "settings/mixin";
+@import "settings/fonts";
+@import "settings/settings";
+
+@import "lib/catalog-lib";
+
+@import "components/header";
+@import "components/catalog";
+@import "components/footer";
+
+@import "1366/catalog-main-1366";
+@import "1023/catalog-main-1023";
+@import "767/catalog-main-767";

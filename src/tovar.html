@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Диван тканевый прямой “D-31” SDP</title>
+  <link href="img/favicon.svg" rel="icon" type="image/svg+xml">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/tovarmain.css" rel="stylesheet">
+</head>
+
+<body class="page">
+  <header class="header">
+    @@include('pattern/header.html')
+    <div class="container header-container">
+      <nav class="navchain header-navchain header-navchain-page" aria-label="Навигационная цепочка">
+        <ul class="list-reset navchain-list">
+          <li class="navchain-item navchain-item-1">
+            <a class="text text-small text-grey link link-grey navchain-link navchain-link-1"
+              href="index.html">Главная</a>
+          </li>
+          <li class="navchain-item navchain-item-2">
+            <a class="text text-small text-grey link link-grey navchain-link navchain-link-2"
+              href="catalog.html">Каталог</a>
+          </li>
+          <li class="navchain-item navchain-item-3">
+            <a class="text text-small text-grey link link-grey navchain-link navchain-link-3" href="#">Диваны</a>
+          </li>
+          <li class="navchain-item navchain-item-4">
+            <a class="text text-small text-grey link link-grey navchain-link navchain-link-4" href="#">Прямые
+              диваны</a>
+          </li>
+          <li class="navchain-item navchain-item-5">
+            <span class="text text-small text-primary-shade navchain-active" aria-current="page">
+              D-31
+            </span>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="product">
+      @@include('pattern/product.html')
+    </section>
+    <section class="similar">
+      @@include('pattern/similar.html')
+    </section>
+  </main>
+
+  <footer class="footer">
+    @@include('pattern/footer.html')
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+.guarantees {
+  padding: 19px 0 16px;
+
+  &-title {
+    margin-bottom: 15px;
+  }
+
+  &-list {
+    margin-bottom: 31px;
+    padding-left: 18px;
+  }
+
+  &-item {
+    &::marker {
+      color: $crusta;
+      font-size: $text-normal;
+      font-weight: 600;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 13px;
+    }
+  }
+
+  &-text {
+    padding-left: 9px;
+    max-width: 65%;
+    line-height: 180%;
+  }
+
+  &-desc {
+    padding: 22px 10px 22px 109.5px;
+    max-width: 65%;
+    min-height: 116px;
+    line-height: 150%;
+    background-image: url("../img/guarantees-1920.webp");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 77px 116px;
+  }
+}

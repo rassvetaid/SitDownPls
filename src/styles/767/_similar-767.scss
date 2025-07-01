@@ -1,0 +1,33 @@
+.similar {
+  padding: 45px 0 70px;
+
+  &-list {
+    gap: $similar-gap;
+  }
+
+  &-item {
+    min-height: 278px;
+  }
+
+  &-article {
+    &-item1 {
+      padding: 46px 0 16px;
+    }
+
+    &-item2 {
+      padding: 38px 0 16px;
+    }
+  }
+
+  &-holder {
+    &-item2 {
+      margin-bottom: 7px;
+    }
+  }
+
+  &-pic {
+    &-item2 {
+      left: 0;
+    }
+  }
+}

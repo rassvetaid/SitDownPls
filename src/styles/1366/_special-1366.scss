@@ -1,0 +1,54 @@
+.special {
+  &-title {
+    margin-bottom: 24px;
+  }
+
+  &-list {
+    grid-template-columns: repeat(9, 1fr);
+  }
+
+  &-item {
+    &-wide {
+      grid-column: span 3;
+    }
+  }
+
+  &-article {
+    &-item2 {
+      background-image: none;
+    }
+  }
+
+  &-holder {
+    height: 252px;
+
+    &-item2 {
+      margin-bottom: 49px;
+      height: 220px;
+    }
+  }
+
+  &-pic {
+    &-item2 {
+      position: relative;
+      left: -3px;
+    }
+  }
+
+  &-link {
+    &-item2,
+    &-item3 {
+      padding: 16px 34px;
+    }
+  }
+
+  &-discount {
+    &-item2 {
+      padding: 9px 5px 9px 15px;
+    }
+
+    &-item3 {
+      padding: 9px 5px 9px 26px;
+    }
+  }
+}

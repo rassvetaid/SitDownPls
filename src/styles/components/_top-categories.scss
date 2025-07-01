@@ -1,0 +1,30 @@
+.top-categories {
+  padding: 70px 0 35px;
+
+  &-title {
+    margin-bottom: 26px;
+    line-height: 32px;
+    letter-spacing: 0.3px;
+  }
+
+  &-list {
+    display: grid;
+    grid-template-columns: repeat(12, 77.5px);
+    gap: $top-categories-gap;
+  }
+
+  &-item {
+    &-1,
+    &-2 {
+      grid-column: span 6;
+      min-height: 511px;
+    }
+
+    &-3,
+    &-4,
+    &-5 {
+      grid-column: span 4;
+      min-height: 405px;
+    }
+  }
+}

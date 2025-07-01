@@ -1,0 +1,9 @@
+.hero {
+  min-height: unset;
+  background-image: url("../img/hero-1024.webp");
+  background-position: center bottom -0.3px;
+
+  &-title {
+    @include text-rubber;
+  }
+}

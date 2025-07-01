@@ -1,0 +1,21 @@
+@import "settings/vars";
+@import "settings/mixin";
+@import "settings/fonts";
+@import "settings/settings";
+
+@import "lib/index-lib";
+
+@import "components/header";
+@import "components/hero";
+@import "components/special";
+@import "components/top-tovar";
+@import "components/oxford";
+@import "components/top-categories";
+@import "components/useful";
+@import "components/feedback";
+@import "components/footer";
+
+@import "1366/main-1366";
+@import "1023/main-1023";
+@import "767/main-767";
+@import "450/main-450";

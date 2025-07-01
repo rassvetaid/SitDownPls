@@ -1,0 +1,32 @@
+.hero {
+  padding: 0 0 40px;
+  background-image: none;
+
+  &-content {
+    position: relative;
+    margin-bottom: 32px;
+    padding: 30px 0 124px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -12px;
+      right: -12px;
+      bottom: 0;
+      background-image: url("../img/hero-768.webp");
+      background-repeat: no-repeat;
+      background-position: bottom center;
+      background-size: cover;
+      z-index: -1;
+    }
+  }
+
+  &-title {
+    margin-bottom: 0;
+    padding-left: 18px;
+    max-width: 85%;
+    font-size: $title-big;
+    line-height: 28px;
+  }
+}

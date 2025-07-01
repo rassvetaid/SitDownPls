@@ -1,0 +1,25 @@
+.useful {
+  padding: 34px 0 33px;
+
+  &-list {
+    gap: $useful-gap;
+  }
+
+  &-item {
+    grid-column: span 6;
+
+    &-3,
+    &-4,
+    &-5 {
+      display: block;
+    }
+  }
+
+  &-subtitle {
+    font-size: $title-small;
+  }
+
+  &-link {
+    padding: 16px 34px 16px 33px;
+  }
+}

@@ -1,0 +1,25 @@
+.feedback {
+  padding: 35px 0 68px;
+
+  &-container {
+    grid-template-columns: repeat(6, 1fr);
+    gap: $feedback-gap;
+
+    &::after {
+      top: 0px;
+      left: 0px;
+      grid-column: span 2;
+      min-height: 444px;
+      background-image: url("../img/feedback-768.webp");
+    }
+  }
+
+  &-left {
+    grid-column: span 4;
+    padding-bottom: 3px;
+  }
+
+  &-btn {
+    padding: 16px 34px 15px 33px;
+  }
+}

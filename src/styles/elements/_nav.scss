@@ -1,0 +1,37 @@
+.nav {
+  padding: 10px 0 6px 1px;
+
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $nav-gap;
+  }
+
+  &-link {
+    position: relative;
+    display: inline-block;
+    outline: none;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    z-index: 1;
+
+    @include left-right-pseudo(10px);
+
+    &:focus-visible {
+      color: $black;
+
+      &::before {
+        background-color: $pink-violet;
+      }
+    }
+
+    @media (any-hover: hover) {
+      &:hover:not(:focus-visible):not(:active) {
+        color: $medium-purple;
+      }
+    }
+
+    &:active:not(:focus-visible) {
+      color: $primary-shade;
+    }
+  }
+}

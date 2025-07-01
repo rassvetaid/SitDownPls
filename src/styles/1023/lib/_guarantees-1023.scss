@@ -1,0 +1,14 @@
+.guarantees {
+  &-list {
+    margin-bottom: 32px;
+  }
+
+  &-text,
+  &-desc {
+    max-width: 100%;
+  }
+
+  &-br {
+    display: none;
+  }
+}

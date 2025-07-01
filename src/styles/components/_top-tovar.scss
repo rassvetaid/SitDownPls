@@ -1,0 +1,47 @@
+.top-tovar {
+  padding: 33px 0 70px;
+
+  &-title {
+    margin-bottom: 23px;
+  }
+
+  &-list {
+    display: grid;
+    grid-template-columns: repeat(12, 77.5px);
+    gap: $top-tovar-gap;
+  }
+
+  &-item {
+    grid-column: span 3;
+    min-height: 420px;
+  }
+
+  &-holder {
+    &-item2,
+    &-item5,
+    &-item6,
+    &-item8 {
+      padding-right: 1px;
+    }
+
+    &-item4 {
+      padding-right: 2px;
+    }
+  }
+
+  &-subtitle {
+    &-item6 {
+      position: relative;
+      left: -2px;
+    }
+  }
+
+  &-link {
+    padding: 16px 33px 15px;
+
+    &-item6 {
+      position: relative;
+      left: -1px;
+    }
+  }
+}

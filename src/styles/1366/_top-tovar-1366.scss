@@ -1,0 +1,18 @@
+.top-tovar {
+  &-list {
+    grid-template-columns: repeat(9, 1fr);
+  }
+
+  &-item {
+    grid-column: span 3;
+
+    &-item7,
+    &-item8 {
+      display: none;
+    }
+  }
+
+  &-link {
+    padding: 17px 33px 15px;
+  }
+}

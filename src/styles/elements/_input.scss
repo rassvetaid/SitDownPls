@@ -1,0 +1,60 @@
+.input {
+  &::placeholder {
+    opacity: 1;
+  }
+
+  &-long {
+    transition: outline-color 0.3s ease-in-out, color 0.3s ease-in-out,
+      background-color 0.3s ease-in-out;
+
+    &::placeholder {
+      color: $grey;
+    }
+
+    &:focus {
+      outline-color: $medium-purple;
+      background-color: $pink-light;
+    }
+
+    @media (any-hover: hover) {
+      &:hover:not(:focus) {
+        background-color: $md-grey;
+      }
+    }
+  }
+
+  &-short {
+    padding: 0 10px 0 12px;
+    border: 1px solid $grey;
+    border-radius: 2px;
+    appearance: textfield;
+    transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out,
+      background-color 0.3s ease-in-out;
+
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+      appearance: none;
+    }
+
+    &:focus {
+      outline: none;
+      border-color: $medium-purple;
+      background-color: $pink-violet;
+    }
+
+    @media (any-hover: hover) {
+      &:hover:not(:focus) {
+        border-color: $medium-purple;
+      }
+    }
+
+    &:active {
+      border-color: $primary-shade;
+    }
+  }
+
+  &-short,
+  &-short::placeholder {
+    color: $grey-shade;
+  }
+}

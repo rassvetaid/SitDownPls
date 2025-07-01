@@ -1,0 +1,13 @@
+.suppliers {
+  padding: 16px 0;
+
+  &-title {
+    margin-bottom: 16px;
+  }
+
+  &-text {
+    max-width: 65.5%;
+    line-height: 180%;
+    letter-spacing: 0.02px;
+  }
+}

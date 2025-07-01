@@ -1,0 +1,10 @@
+@media (max-width: 767px) {
+  @import "settings-767";
+  @import "vars-767";
+
+  @import "lib/lib-cooperation-767";
+
+  @import "header-767";
+  @import "cooperation-767";
+  @import "footer-767";
+}

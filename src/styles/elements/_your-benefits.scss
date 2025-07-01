@@ -1,0 +1,28 @@
+.your-benefits {
+  padding: 20px 0 16px;
+
+  &-title {
+    margin-bottom: 16px;
+  }
+
+  &-item {
+    &:not(:last-child) {
+      margin-bottom: 14px;
+    }
+  }
+
+  &-title,
+  &-subtitle {
+    letter-spacing: 0.06px;
+  }
+
+  &-subtitle {
+    margin-bottom: 14px;
+  }
+
+  &-text {
+    max-width: 67%;
+    line-height: 181%;
+    letter-spacing: 0.04px;
+  }
+}

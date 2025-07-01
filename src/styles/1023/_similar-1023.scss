@@ -1,0 +1,19 @@
+.similar {
+  padding: 10px 0 70px;
+
+  &-title {
+    margin-bottom: 25px;
+  }
+
+  &-list {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  &-item {
+    grid-column: span 3;
+
+    &-3 {
+      display: none;
+    }
+  }
+}

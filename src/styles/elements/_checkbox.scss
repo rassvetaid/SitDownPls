@@ -1,0 +1,35 @@
+@include custom-checkbox;
+
+.checkbox {
+  &-input {
+    &:focus-visible + .checkbox-span {
+      color: $medium-purple;
+      text-decoration-color: $medium-purple;
+    }
+
+    &:active:not(:focus-visible) + .checkbox-span {
+      text-decoration-color: $primary-shade;
+    }
+
+    &:active:not(:focus-visible) + .checkbox-span,
+    &:active:not(:focus-visible) + .checkbox-span .checkbox-link {
+      color: $primary-shade;
+    }
+  }
+
+  &-span {
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+    transition: color 0.3s ease-in-out, text-decoration-color 0.3s ease-in-out;
+
+    @media (any-hover: hover) {
+      &:hover:not(:focus-visible):not(:active) {
+        color: $medium-purple;
+        text-decoration-color: $medium-purple;
+      }
+    }
+  }
+}

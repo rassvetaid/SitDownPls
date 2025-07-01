@@ -1,0 +1,4 @@
+@include font-load($first-font, "Regular");
+@include font-load($first-font, "SemiBold");
+@include font-load($first-font, "Bold");
+@include font-load($second-font, "Black");

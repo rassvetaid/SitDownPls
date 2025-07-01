@@ -1,0 +1,36 @@
+.you-get {
+  padding: 19px 0 16px;
+
+  &-title {
+    margin-bottom: 8px;
+    letter-spacing: 0.06px;
+  }
+
+  &-text {
+    line-height: 150%;
+  }
+
+  &-item {
+    padding: 5px 0 0 37px;
+    max-width: 49%;
+    background-repeat: no-repeat;
+    background-position: 0 5px;
+    background-size: 25px 25px;
+
+    &-1 {
+      background-image: url("../img/sprite.svg#network");
+    }
+
+    &-2 {
+      background-image: url("../img/sprite.svg#briefcase");
+    }
+
+    &-3 {
+      background-image: url("../img/sprite.svg#git-pull-request");
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 7px;
+    }
+  }
+}

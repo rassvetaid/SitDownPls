@@ -1,0 +1,200 @@
+@mixin font-load($font, $weight) {
+  @font-face {
+    font-family: $font;
+    src: local($font + "-" + $weight),
+      url("../fonts/" + $font + "-" + $weight + ".woff2") format("woff2"),
+      url("../fonts/" + $font + "-" + $weight + ".woff") format("woff");
+
+    @if $weight == "Thin" {
+      font-weight: 100;
+    }
+
+    @if $weight == "Extra Light" {
+      font-weight: 200;
+    }
+
+    @if $weight == "Light" {
+      font-weight: 300;
+    }
+
+    @if $weight == "Regular" {
+      font-weight: 400;
+    }
+
+    @if $weight == "Medium" {
+      font-weight: 500;
+    }
+
+    @if $weight == "SemiBold" {
+      font-weight: 600;
+    }
+
+    @if $weight == "Bold" {
+      font-weight: 700;
+    }
+
+    @if $weight == "Extra Bold" {
+      font-weight: 800;
+    }
+
+    @if $weight == "Black" {
+      font-weight: 900;
+    }
+
+    font-style: normal;
+    font-display: swap;
+  }
+}
+
+@mixin width-height($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin list-reset {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@mixin list-ol-reset {
+  padding: 0;
+  margin: 0;
+}
+
+@mixin btn-reset {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@mixin visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+
+@mixin fieldset-reset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+@mixin left-right-pseudo($pixels) {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -$pixels;
+    bottom: 0;
+    left: -$pixels;
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out;
+    z-index: -1;
+  }
+}
+
+@mixin left-right-pseudo-all {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100vw;
+    z-index: -1;
+  }
+
+  &::before {
+    right: 100%;
+  }
+
+  &::after {
+    left: 100%;
+  }
+}
+
+@mixin pseudo-all-center {
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 100vw;
+    transform: translateX(-50%);
+    z-index: -1;
+  }
+}
+
+@mixin text-rubber {
+  overflow-wrap: anywhere;
+}
+
+@mixin line-through {
+  text-decoration: underline;
+  text-underline-offset: -0.26em;
+  text-decoration-skip-ink: none;
+}
+
+@mixin custom-checkbox {
+  .checkbox {
+    user-select: none;
+    cursor: pointer;
+
+    &-input {
+      position: absolute;
+      outline: 0;
+      appearance: none;
+
+      &:checked + .checkbox-span::before {
+        opacity: 0;
+      }
+
+      &:checked + .checkbox-span::after {
+        opacity: 1;
+      }
+    }
+
+    &-span {
+      position: relative;
+      padding-left: 22px;
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        top: 3px;
+        left: 0;
+        display: block;
+        @include width-height(14px, 14px);
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: opacity 0.3s ease-in-out;
+      }
+
+      &::before {
+        background-image: url("../img/sprite.svg#cheked-off");
+        background-size: 14px 14px;
+        opacity: 1;
+      }
+
+      &::after {
+        background-image: url("../img/sprite.svg#cheked-on");
+        background-size: 15px 15px;
+        opacity: 0;
+      }
+    }
+  }
+}
+
+@mixin enlargement-of-the-area($pixelsTB, $pixelsLR) {
+  &::before {
+    content: "";
+    position: absolute;
+    top: -$pixelsTB;
+    right: -$pixelsLR;
+    bottom: -$pixelsTB;
+    left: -$pixelsLR;
+    transition: background-color 0.3s ease-in-out;
+    z-index: -1;
+  }
+}

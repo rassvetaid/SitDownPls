@@ -1,0 +1,119 @@
+.product {
+  padding: 13px 0 41px;
+
+  &-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: $product-gap;
+  }
+
+  &-pic {
+    grid-column: span 6;
+  }
+
+  &-buy {
+    grid-column: span 6;
+    @include text-rubber;
+  }
+
+  &-reting {
+    position: unset;
+    margin-bottom: 6px;
+    padding-left: 22px;
+  }
+
+  &-title {
+    margin-bottom: 4px;
+  }
+
+  &-text {
+    margin-bottom: 23px;
+  }
+
+  &-price {
+    margin-bottom: 24px;
+    @include text-rubber;
+  }
+
+  &-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: $product-btn-gap;
+  }
+
+  &-buy-btn {
+    padding: 16px 34px 15px 33px;
+  }
+
+  &-about {
+    display: flex;
+    flex-direction: column;
+    grid-column: span 6;
+  }
+
+  &-subtitle {
+    position: relative;
+    left: -1px;
+    margin-bottom: 6px;
+  }
+
+  &-desc {
+    margin-bottom: auto;
+    padding-bottom: 10px;
+    line-height: 25.2px;
+
+    &:not(:last-of-type) {
+      margin-bottom: 8px;
+      padding-bottom: 0;
+    }
+  }
+
+  &-img-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: $product-img-box-gap;
+    max-width: max-content;
+  }
+
+  &-subpic {
+    line-height: 0;
+  }
+
+  &-settings {
+    grid-column: span 6;
+  }
+
+  &-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: $product-settings-row-gap;
+    padding: 6px 0 4px;
+  }
+
+  &-item {
+    display: flex;
+    column-gap: $product-settings-column-gap;
+    @include text-rubber;
+  }
+
+  &-left {
+    display: inline-flex;
+    flex-shrink: 0;
+    width: 51.9%;
+
+    &::after {
+      content: "";
+      flex-grow: 1;
+      background-image: url("../img/dot.webp");
+      background-repeat: repeat-x;
+      background-size: 5px 2px;
+      background-position: left 1px top 11px;
+    }
+  }
+
+  &-right {
+    display: block;
+    max-width: 216px;
+  }
+}

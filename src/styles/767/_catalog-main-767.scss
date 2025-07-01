@@ -1,0 +1,10 @@
+@media (max-width: 767px) {
+  @import "settings-767";
+  @import "vars-767";
+
+  @import "lib/lib-catalog-767";
+
+  @import "header-767";
+  @import "catalog-767";
+  @import "footer-767";
+}

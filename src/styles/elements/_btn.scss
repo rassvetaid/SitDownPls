@@ -1,0 +1,100 @@
+.btn {
+  border: 2px solid transparent;
+  border-radius: 10px;
+  @include text-rubber;
+
+  &-big {
+    padding: 19px 47px 19px 49px;
+    font-weight: 700;
+    color: $white;
+  }
+
+  &-ambush {
+    padding: 16px 33px 16px 33px;
+    border-color: $medium-purple;
+    font-weight: 600;
+    color: $medium-purple;
+    transition: color 0.3s ease-in-out;
+
+    &:focus-visible {
+      color: $white;
+    }
+
+    @media (any-hover: hover) {
+      &:hover:not(:focus-visible):not(:active) {
+        color: $white;
+        background-color: $medium-purple;
+      }
+    }
+
+    &:active:not(:focus-visible) {
+      border-color: transparent;
+      color: $white;
+      background-color: $primary-shade;
+    }
+  }
+
+  &-ambush,
+  &-medium-purple {
+    transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out,
+      background-color 0.3s ease-in-out;
+
+    &:focus-visible {
+      outline: none;
+      background-color: $mauve;
+    }
+  }
+
+  &-medium-purple {
+    background-color: $medium-purple;
+
+    &:focus-visible {
+      border-color: $primary-shade;
+    }
+
+    @media (any-hover: hover) {
+      &:hover:not(:focus-visible):not(:active):not(:disabled) {
+        background-color: $mauve;
+      }
+    }
+
+    &:active:not(:focus-visible):not(:disabled) {
+      background-color: $primary-shade;
+    }
+
+    &:disabled {
+      color: $grey;
+      background-color: $md-grey;
+      cursor: not-allowed;
+    }
+  }
+
+  &-semi-bold {
+    font-weight: 600;
+  }
+
+  &-transparent {
+    padding: 7px 29px;
+    border: 1px solid transparent;
+    color: $medium-purple;
+    transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out,
+      color 0.3s ease-in-out;
+
+    &:focus-visible {
+      border-color: $medium-purple;
+      outline: none;
+      background-color: $pink-light;
+    }
+
+    @media (any-hover: hover) {
+      &:hover:not(:focus-visible):not(:active):not(:disabled) {
+        border-color: $medium-purple;
+      }
+    }
+
+    &:active:not(:focus-visible) {
+      border-color: $primary-shade;
+      color: $primary-shade;
+    }
+  }
+}

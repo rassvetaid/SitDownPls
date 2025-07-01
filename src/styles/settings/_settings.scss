@@ -1,0 +1,61 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.page {
+  min-width: 320px;
+  font-family: $first-font-family;
+  background-color: $white;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 36px;
+  max-width: 1352px;
+}
+
+.list-reset {
+  @include list-reset;
+}
+
+.list-ol-reset {
+  @include list-ol-reset;
+}
+
+.btn-reset {
+  @include btn-reset;
+}
+
+.visually-hidden {
+  @include visually-hidden;
+}
+
+.block {
+  display: block;
+}
+
+.fieldset-reset {
+  @include fieldset-reset;
+}
+
+.font-second {
+  font-family: $second-font-family;
+}
+
+.none {
+  display: none;
+}

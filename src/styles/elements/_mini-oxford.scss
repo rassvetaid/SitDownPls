@@ -1,0 +1,39 @@
+.mini-oxford {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  min-height: 360px;
+  background-color: $black;
+  @include text-rubber;
+
+  &::before {
+    content: "";
+    display: block;
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    height: 190px;
+    background-image: url("../img/oxford-mini-1920.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &-box {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 34px 30px 27px;
+  }
+
+  &-text {
+    margin-bottom: auto;
+    max-width: 199px;
+    line-height: 22px;
+  }
+
+  &-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $btn-wrap-gap;
+  }
+}

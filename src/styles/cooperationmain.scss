@@ -1,0 +1,14 @@
+@import "settings/vars";
+@import "settings/mixin";
+@import "settings/fonts";
+@import "settings/settings";
+
+@import "lib/cooperation-lib";
+
+@import "components/header";
+@import "components/cooperation";
+@import "components/footer";
+
+@import "1366/cooperation-main-1366";
+@import "1023/cooperation-main-1023";
+@import "767/cooperation-main-767";

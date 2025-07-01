@@ -1,0 +1,16 @@
+@import "settings/vars";
+@import "settings/mixin";
+@import "settings/fonts";
+@import "settings/settings";
+
+@import "lib/tovar-lib";
+
+@import "components/header";
+@import "components/product";
+@import "components/similar";
+@import "components/footer";
+
+@import "1366/tovar-main-1366";
+@import "1023/tovar-main-1023";
+@import "767/tovar-main-767";
+@import "450/tovar-main-450";

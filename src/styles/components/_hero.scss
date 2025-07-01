@@ -1,0 +1,19 @@
+.hero {
+  padding: 81px 0 80px;
+  background-image: url("../img/hero-1920.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &-title {
+    margin-bottom: 49px;
+    max-width: 496px;
+    line-height: 65px;
+  }
+
+  &-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $btn-wrap-gap;
+  }
+}

@@ -1,0 +1,27 @@
+.card-categories {
+  &-title {
+    &-2,
+    &-3,
+    &-4,
+    &-5 {
+      margin-bottom: 37px;
+    }
+  }
+
+  &-list {
+    margin-bottom: 6.5px;
+  }
+
+  &-pic {
+    margin-bottom: auto;
+    height: 296px;
+
+    &-1 {
+      height: 308px;
+    }
+
+    &-4 {
+      left: 0;
+    }
+  }
+}

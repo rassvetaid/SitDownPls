@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Каталог SDP</title>
+  <link href="img/favicon.svg" rel="icon" type="image/svg+xml">
+
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/catalogmain.css" rel="stylesheet">
+</head>
+
+<body class="page">
+  <header class="header">
+    @@include('pattern/header.html')
+    <div class="container header-container">
+      <nav class="navchain header-navchain" aria-label="Навигационная цепочка">
+        <ul class="list-reset navchain-list">
+          <li class="navchain-item navchain-item-1">
+            <a class="text text-small text-grey link link-grey navchain-link navchain-link-1"
+              href="index.html">Главная</a>
+          </li>
+          <li class="navchain-item navchain-item-2">
+            <a class="text text-small text-grey link link-grey navchain-link navchain-link-2"
+              href="catalog.html">Каталог</a>
+          </li>
+          <li class="navchain-item navchain-item-3">
+            <a class="text text-small text-grey link link-grey navchain-link navchain-link-3" href="#">Диваны</a>
+          </li>
+          <li class="navchain-item navchain-item-4">
+            <span class="text text-small text-primary-shade navchain-active" aria-current="page">
+              Прямые диваны
+            </span>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="catalog">
+      <div class="container catalog-container">
+        <h1 class="none title title-small catalog-title catalog-title-media-1024">
+          Каталог
+        </h1>
+        <div class="filter catalog-filter">
+          <h2 class="title title-small-sm filter-title">
+            Фильтровать по:
+          </h2>
+          <ul class="list-reset filter-list">
+            <li class="filter-item filter-item-1">
+              <h3 class="title title-tiny title-semi-bold title-grey-shade filter-subtitle filter-subtitle-1">
+                Цвет
+              </h3>
+              <ul class="list-reset filter-sublist">
+                <li class="filter-subitem">
+                  <label class="checkbox filter-checkbox-label">
+                    <input class="checkbox-input filter-checkbox-input" type="checkbox" name="color-brown">
+                    <span class="checkbox-span text text-grey-shade filter-checkbox-span">
+                      Коричневый
+                    </span>
+                  </label>
+                </li>
+                <li class="filter-subitem">
+                  <label class="checkbox filter-checkbox-label">
+                    <input class="checkbox-input filter-checkbox-input" type="checkbox" name="color-black" checked>
+                    <span class="checkbox-span text text-grey-shade filter-checkbox-span">
+                      Черный
+                    </span>
+                  </label>
+                </li>
+                <li class="filter-subitem">
+                  <label class="checkbox filter-checkbox-label">
+                    <input class="checkbox-input filter-checkbox-input" type="checkbox" name="color-blue">
+                    <span class="checkbox-span text text-grey-shade filter-checkbox-span">
+                      Синий
+                    </span>
+                  </label>
+                </li>
+                <li class="filter-subitem">
+                  <label class="checkbox filter-checkbox-label">
+                    <input class="checkbox-input filter-checkbox-input" type="checkbox" name="color-white">
+                    <span class="checkbox-span text text-grey-shade filter-checkbox-span">
+                      Белый
+                    </span>
+                  </label>
+                </li>
+              </ul>
+            </li>
+            <li class="filter-item filter-item-2">
+              <h3 class="title title-tiny title-semi-bold title-grey-shade filter-subtitle filter-subtitle-2">
+                Категория
+              </h3>
+              <ul class="list-reset filter-sublist">
+                <li class="filter-subitem">
+                  <label class="checkbox filter-checkbox-label">
+                    <input class="checkbox-input filter-checkbox-input" type="checkbox" name="type-sofas" checked>
+                    <span class="checkbox-span text text-grey-shade filter-checkbox-span">
+                      Диваны
+                    </span>
+                  </label>
+                </li>
+                <li class="filter-subitem">
+                  <label class="checkbox filter-checkbox-label">
+                    <input class="checkbox-input filter-checkbox-input" type="checkbox" name="type-chairs">
+                    <span class="checkbox-span text text-grey-shade filter-checkbox-span">
+                      Кресла
+                    </span>
+                  </label>
+                </li>
+              </ul>
+            </li>
+            <li class="filter-item filter-item-3">
+              <h3 class="title title-tiny title-semi-bold title-grey-shade filter-subtitle filter-subtitle-3">
+                Цена
+              </h3>
+              <span class="text text-grey-shade filter-price">
+                от
+              </span>
+              <label class="filter-label">
+                <span class="visually-hidden">
+                  Минимальная цена
+                </span>
+                <input class="input input-short filter-input" type="number" name="price-min" min="0" placeholder="2000">
+              </label>
+              <span class="text text-grey-shade filter-price">
+                до
+              </span>
+              <label class="filter-label">
+                <span class="visually-hidden">
+                  Максимальная цена
+                </span>
+                <input class="input input-short filter-input" type="number" name="price-max" min="0"
+                  placeholder="150 000">
+              </label>
+            </li>
+          </ul>
+          <article class="mini-oxford filter-article">
+            <div class="mini-oxford-box">
+              <h2 class="font-second title title-small title-gold title-black mini-oxford-title">
+                Оксфорд 1950
+              </h2>
+              <p class="text text-grey mini-oxford-text">
+                Новая коллекция изысканных кресел
+              </p>
+              <div class="mini-oxford-wrap">
+                <a class="arrow-link block text text-bold text-medium-purple link link-underline" href="#">
+                  В каталог
+                  <svg class="arrow-link-svg">
+                    <use xlink:href="img/sprite.svg#card-categories-arrow"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+        <div class="catalog-box">
+          <h1 class="title title-small catalog-title catalog-title-media-1920">
+            Каталог
+          </h1>
+          <ul class="list-reset catalog-list">
+            <li class="catalog-item catalog-item-item1">
+              @@include('pattern/card.html', {
+              "img": {
+              "1920": "img/rating-1-1920.webp",
+              "320": "img/rating-1-320.webp",
+              },
+              "alt": "Диван кожаный R-94, цвет чёрный.",
+              "category": "Диван кожаный",
+              "model": "R-94",
+              "price": "94 990 руб",
+              "href": "#",
+              "rating": "5,0",
+              "block": "catalog",
+              "card-number": "item1",
+              })
+            </li>
+            <li class="catalog-item catalog-item-item2">
+              @@include('pattern/card.html', {
+              "img": {
+              "1920": "img/rating-2-1920.webp",
+              "320": "img/rating-2-320.webp",
+              },
+              "alt": "Диван апартековый T-75, цвет коричневый.",
+              "category": "Диван апартековый",
+              "model": "T-75",
+              "price": "69 990 руб",
+              "href": "#",
+              "rating": "4,9",
+              "block": "catalog",
+              "card-number": "item2",
+              })
+            </li>
+            <li class="catalog-item catalog-item-item3">
+              @@include('pattern/card.html', {
+              "img": {
+              "1920": "img/rating-3-1920.webp",
+              "320": "img/rating-3-320.webp",
+              },
+              "alt": "Диван тканевый D-31, цвет синий.",
+              "category": "Диван тканевый",
+              "model": "D-31",
+              "price": "28 490 руб",
+              "href": "tovar.html",
+              "rating": "4,8",
+              "block": "catalog",
+              "card-number": "item3",
+              })
+            </li>
+            <li class="catalog-item catalog-item-item4">
+              @@include('pattern/card.html', {
+              "img": {
+              "1920": "img/rating-4-1920.webp",
+              "320": "img/rating-4-320.webp",
+              },
+              "alt": "Диван велюровый Y-68, цвет светло оранжевый.",
+              "category": "Диван велюровый",
+              "model": "Y-68",
+              "price": "22 990 руб",
+              "href": "#",
+              "rating": "4,8",
+              "block": "catalog",
+              "card-number": "item4",
+              })
+            </li>
+            <li class="catalog-item catalog-item-item5">
+              @@include('pattern/card.html', {
+              "img": {
+              "1920": "img/rating-5-1920.webp",
+              "320": "img/rating-5-320.webp",
+              },
+              "alt": "Диван из шинила W-95, цвет светло жёлтый.",
+              "category": "Диван из шинила",
+              "model": "W-95",
+              "price": "22 990 руб",
+              "href": "#",
+              "rating": "4,8",
+              "block": "catalog",
+              "card-number": "item5",
+              })
+            </li>
+            <li class="catalog-item catalog-item-item6">
+              @@include('pattern/card.html', {
+              "img": {
+              "1920": "img/rating-6-1920.webp",
+              "320": "img/rating-6-320.webp",
+              },
+              "alt": "Диван флоковый G-41, цвет бежевый.",
+              "category": "Диван флоковый",
+              "model": "G-41",
+              "price": "17 990 руб",
+              "href": "#",
+              "rating": "4,8",
+              "block": "catalog",
+              "card-number": "item6",
+              })
+            </li>
+            <li class="catalog-item catalog-item-item7">
+              @@include('pattern/card.html', {
+              "img": {
+              "1920": "img/rating-7-1920.webp",
+              "320": "img/rating-7-1920.webp",
+              },
+              "alt": "Диван шиниловый V-43, цвет серый.",
+              "category": "Диван шиниловый",
+              "model": "V-43",
+              "price": "19 990 руб",
+              "href": "#",
+              "rating": "4,8",
+              "block": "catalog",
+              "card-number": "item7",
+              })
+            </li>
+            <li class="catalog-item catalog-item-item8">
+              @@include('pattern/card.html', {
+              "img": {
+              "1920": "img/rating-8-1920.webp",
+              "320": "img/rating-8-1920.webp",
+              },
+              "alt": "Диван велюровый S-99, цвет жёлтая охра.",
+              "category": "Диван велюровый",
+              "model": "S-99",
+              "price": "19 990 руб",
+              "href": "#",
+              "rating": "4,7",
+              "block": "catalog",
+              "card-number": "item8",
+              })
+            </li>
+            <li class="catalog-item catalog-item-item9">
+              @@include('pattern/card.html', {
+              "img": {
+              "1920": "img/rating-9-1920.webp",
+              "320": "img/rating-9-1920.webp",
+              },
+              "alt": "Диван из кожзама F-85, цвет зелёный.",
+              "category": "Диван из кожзама",
+              "model": "F-85",
+              "price": "26 990 руб",
+              "href": "#",
+              "rating": "4,7",
+              "block": "catalog",
+              "card-number": "item9",
+              })
+            </li>
+          </ul>
+          <nav class="pagination catalog-pagination">
+            <ul class="list-reset pagination-list">
+              <li class="pagination-item pagination-item-1">
+                <span class="text text-semi-bold text-white pagination-active" aria-current="page">
+                  1
+                </span>
+              </li>
+              <li class="pagination-item pagination-item-2">
+                <a class="btn btn-ambush text text-semi-bold text-medium-purple pagination-link" href="#"
+                  aria-label="Страница 2">
+                  2
+                </a>
+              </li>
+              <li class="none pagination-item pagination-item-3">
+                <a class="btn btn-ambush text text-semi-bold text-medium-purple pagination-link pagination-link"
+                  href="#" aria-label="Страница 3">
+                  3
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    @@include('pattern/footer.html')
+  </footer>
+</body>
+
+</html>

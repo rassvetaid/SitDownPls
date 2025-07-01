@@ -1,0 +1,10 @@
+@media (max-width: 1023px) {
+  @import "settings-1023";
+  @import "vars-1023";
+
+  @import "lib/lib-catalog-1023";
+
+  @import "header-1023";
+  @import "catalog-1023";
+  @import "footer-1023";
+}

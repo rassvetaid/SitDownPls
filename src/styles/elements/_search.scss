@@ -1,0 +1,104 @@
+.search {
+  position: relative;
+
+  &-input {
+    padding: 13px 80px 11px 60px;
+    border: none;
+    outline: 2px solid transparent;
+    border-radius: 10px;
+    @include width-height(100%, 60px);
+    color: $black;
+    background-color: $grey-light;
+    transition: outline-color 0.3s ease-in-out,
+      background-color 0.3s ease-in-out;
+  }
+
+  &-icon {
+    &-magnifier {
+      position: absolute;
+      top: 20px;
+      left: 32px;
+      @include width-height(20px, 20px);
+    }
+
+    &-search-arrow {
+      fill: $white;
+      stroke: $medium-purple;
+      stroke-width: 2;
+      transition: fill 0.3s ease-in-out, stroke 0.3s ease-in-out;
+    }
+  }
+
+  &-btn {
+    position: absolute;
+    top: 14px;
+    right: 33px;
+    z-index: 1;
+
+    &,
+    .search-icon-search-arrow {
+      @include width-height(32px, 32px);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      border: 2px solid $medium-purple;
+      border-radius: 100%;
+      background-color: $white;
+      transition: border-color 0.3s ease-in-out,
+        background-color 0.3s ease-in-out;
+      z-index: -1;
+    }
+
+    &:focus-visible {
+      outline: none;
+    }
+
+    &:focus-visible .search-icon-search-arrow {
+      fill: $mauve;
+      stroke: $white;
+    }
+
+    &:focus-visible::after {
+      background-color: $mauve;
+    }
+
+    @media (any-hover: hover) {
+      &:hover:not(:focus-visible):not(:active):not(:disabled):after {
+        background-color: $medium-purple;
+      }
+
+      &:hover:not(:focus-visible):not(:active):not(:disabled)
+        .search-icon-search-arrow {
+        fill: $medium-purple;
+        stroke: $white;
+      }
+    }
+
+    &:active:not(:focus-visible):not(:disabled) .search-icon-search-arrow {
+      fill: $primary-shade;
+      stroke: $white;
+    }
+
+    &:active:not(:focus-visible):not(:disabled):after {
+      background-color: $primary-shade;
+    }
+
+    &:disabled {
+      cursor: not-allowed;
+
+      &::after {
+        border-color: $md-grey;
+      }
+
+      & .search-icon-search-arrow {
+        stroke: $md-grey;
+      }
+    }
+  }
+}

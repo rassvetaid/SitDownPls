@@ -1,0 +1,63 @@
+.top-tovar {
+  padding: 34px 0 70px;
+
+  &-title {
+    margin-bottom: 24px;
+  }
+
+  &-list {
+    gap: $top-tovar-gap;
+  }
+
+  &-item {
+    min-height: 278px;
+  }
+
+  &-article {
+    &-item1 {
+      padding: 53px 0 16px;
+    }
+
+    &-item4 {
+      padding: 43px 0 16px;
+    }
+
+    &-item5 {
+      padding: 45px 0 16px;
+    }
+
+    &-item6 {
+      padding: 46px 0 16px;
+    }
+  }
+
+  &-subtitle {
+    &-item6 {
+      padding-left: 2px;
+    }
+  }
+
+  &-holder {
+    &-item1 {
+      margin-bottom: 21px;
+    }
+
+    &-item4 {
+      margin-bottom: 11px;
+    }
+
+    &-item5 {
+      margin-bottom: 14px;
+    }
+
+    &-item6 {
+      margin-bottom: 15px;
+    }
+  }
+
+  &-link {
+    &-item6 {
+      left: 0;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+.header {
+  overflow-x: unset;
+  padding-bottom: 12px;
+
+  &-index {
+    padding-bottom: 32px;
+  }
+
+  &-container {
+    gap: $header-gap;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+
+    &:not(:first-child) {
+      display: none;
+    }
+  }
+
+  &-logo {
+    grid-column: span 6;
+    justify-self: center;
+    order: 1;
+  }
+
+  &-side {
+    order: 2;
+  }
+
+  &-phone {
+    grid-column: span 4;
+    order: 3;
+  }
+
+  &-box {
+    grid-column: span 2;
+    align-self: start;
+    gap: $header-box-gap;
+    order: 4;
+    padding: 11px 0 0;
+  }
+
+  &-cart-count {
+    padding: 1.5px 4px 2px;
+  }
+
+  &-nav {
+    justify-self: auto;
+  }
+}

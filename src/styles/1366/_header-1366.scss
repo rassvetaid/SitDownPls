@@ -1,0 +1,53 @@
+.header {
+  &-container {
+    grid-template-columns: repeat(9, 1fr);
+    gap: $header-gap;
+  }
+
+  &-phone {
+    grid-column: span 9;
+  }
+
+  &-side {
+    justify-self: start;
+  }
+
+  &-side,
+  &-nav,
+  &-search {
+    grid-column: span 7;
+  }
+
+  &-box {
+    order: 3;
+  }
+
+  &-box,
+  &-logo {
+    grid-column: span 2;
+  }
+
+  &-logo {
+    order: 4;
+  }
+
+  &-nav {
+    justify-self: end;
+    order: 5;
+  }
+
+  &-search {
+    padding-top: 9px;
+    order: 6;
+  }
+
+  &-cart-count {
+    padding: 2px 4px 1px;
+  }
+
+  &-navchain {
+    &-page {
+      top: 0;
+    }
+  }
+}

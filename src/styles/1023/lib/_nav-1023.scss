@@ -1,0 +1,11 @@
+.nav {
+  padding: 8px 0px 6px;
+
+  &-list {
+    gap: $nav-gap;
+  }
+
+  &-link {
+    font-size: $text-normal;
+  }
+}

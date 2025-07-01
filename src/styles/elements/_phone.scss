@@ -1,0 +1,41 @@
+.phone {
+  padding: 15px 0 17px;
+
+  &-link {
+    position: relative;
+    padding-left: 22.5px;
+    outline: none;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+
+    &:focus-visible {
+      background-color: $bone;
+    }
+
+    @media (any-hover: hover) {
+      &:hover:not(:focus-visible):not(:active) {
+        color: $secondary-light;
+      }
+
+      &:hover:not(:focus-visible):not(:active) .phone-icon {
+        fill: $secondary-light;
+      }
+    }
+
+    &:active:not(:focus-visible) {
+      color: $secondary-shade;
+    }
+
+    &:active:not(:focus-visible) .phone-icon {
+      fill: $secondary-shade;
+    }
+  }
+
+  &-icon {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    @include width-height(22px, 22px);
+    fill: $crusta;
+    transition: fill 0.3s ease-in-out;
+  }
+}

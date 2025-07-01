@@ -1,0 +1,15 @@
+.footer-menu {
+  &-list {
+    justify-content: center;
+    gap: $footer-menu-gap;
+    padding: 0;
+  }
+
+  &-item {
+    min-width: 140px;
+  }
+
+  &-title {
+    font-size: $title-small;
+  }
+}

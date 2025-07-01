@@ -1,0 +1,78 @@
+.footer {
+  &-top {
+    padding: 24px 0 20px;
+    background-color: $md-grey;
+  }
+
+  &-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: $footer-gap;
+  }
+
+  &-left {
+    grid-column: span 2;
+  }
+
+  &-pic {
+    margin-bottom: 27px;
+  }
+
+  &-social-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $footer-icon-gap;
+  }
+
+  &-social-link {
+    position: relative;
+    font-size: 0;
+
+    @include enlargement-of-the-area(6px, 6px);
+
+    &::before {
+      z-index: 0;
+    }
+
+    &:focus-visible {
+      outline: none;
+
+      &::before {
+        background-color: $mauve;
+      }
+
+      & .footer-social-icon {
+        fill: $white;
+      }
+    }
+
+    @media (any-hover: hover) {
+      &:hover:not(:focus-visible):not(:active) .footer-social-icon {
+        fill: $medium-purple;
+      }
+    }
+
+    &:active:not(:focus-visible) .footer-social-icon {
+      fill: $primary-shade;
+    }
+  }
+
+  &-social-icon {
+    position: relative;
+    @include width-height(30px, 30px);
+    fill: $grey;
+    transition: fill 0.3s ease-in-out;
+    z-index: 1;
+  }
+
+  &-nav {
+    grid-column: span 10;
+  }
+
+  &-copyright {
+    display: block;
+    padding: 7px 0;
+    text-align: center;
+    background-color: $grey-light;
+  }
+}

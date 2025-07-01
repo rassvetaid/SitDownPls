@@ -1,0 +1,28 @@
+.similar {
+  padding: 32px 0 70px;
+
+  &-title {
+    padding-left: 0;
+  }
+
+  &-list {
+    grid-template-columns: repeat(9, 1fr);
+  }
+
+  &-item {
+    &-4 {
+      display: none;
+    }
+  }
+
+  &-pic {
+    &-item2 {
+      position: relative;
+      left: 1px;
+    }
+  }
+
+  &-link {
+    padding: 17px 33px 15px;
+  }
+}

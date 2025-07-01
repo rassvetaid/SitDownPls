@@ -1,0 +1,65 @@
+.text {
+  margin: 0;
+  font-size: $text-normal;
+  font-weight: 400;
+
+  &-tiny {
+    font-size: $text-tiny;
+  }
+
+  &-small {
+    font-size: $text-small;
+  }
+
+  &-big {
+    font-size: $text-big;
+  }
+
+  &-huge {
+    font-size: $text-huge;
+  }
+
+  &-big-cost {
+    font-size: $text-big-cost;
+  }
+
+  &-white {
+    color: $white;
+  }
+
+  &-crusta {
+    color: $crusta;
+  }
+
+  &-grey {
+    color: $grey;
+  }
+
+  &-black {
+    color: $black;
+  }
+
+  &-grey-shade {
+    color: $grey-shade;
+  }
+
+  &-medium-purple {
+    color: $medium-purple;
+  }
+
+  &-primary-shade {
+    color: $primary-shade;
+  }
+
+  &-semi-bold {
+    font-weight: 600;
+  }
+
+  &-bold {
+    font-weight: 700;
+  }
+
+  &-line-through {
+    @include line-through;
+  }
+}

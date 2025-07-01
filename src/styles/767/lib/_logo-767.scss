@@ -1,0 +1,12 @@
+.logo {
+  position: relative;
+  padding: 12px 1px 8px 0;
+
+  @include pseudo-all-center;
+
+  &::before {
+    top: 0;
+    bottom: 0;
+    background-color: $grey-light;
+  }
+}

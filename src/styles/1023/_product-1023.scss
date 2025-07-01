@@ -1,0 +1,40 @@
+.product {
+  padding: 1px 0 25px;
+
+  &-container {
+    grid-template-columns: repeat(6, 1fr);
+    gap: $product-gap;
+  }
+
+  &-pic {
+    left: 0px;
+    grid-column: span 6;
+    justify-self: center;
+    padding-top: 3px;
+  }
+
+  &-buy {
+    grid-column: span 6;
+    padding: 49px 0 35px 1px;
+  }
+
+  &-buy-btn {
+    padding: 16px 34px 16px 33px;
+  }
+
+  &-desc {
+    padding-bottom: 31px;
+  }
+
+  &-about {
+    padding-top: 7px;
+  }
+
+  &-settings {
+    grid-column: span 6;
+  }
+
+  &-left {
+    width: calc(100% - 216px - 4px);
+  }
+}

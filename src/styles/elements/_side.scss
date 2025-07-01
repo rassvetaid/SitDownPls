@@ -1,0 +1,18 @@
+.side {
+  position: relative;
+  padding: 15px 0 17px;
+
+  @include left-right-pseudo-all;
+
+  &,
+  &::before,
+  &::after {
+    background-color: $grey-light;
+  }
+
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $side-gap;
+  }
+}

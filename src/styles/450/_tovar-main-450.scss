@@ -1,0 +1,11 @@
+@media (max-width: 450px) {
+  .product {
+    &-left {
+      width: 100%;
+
+      &::after {
+        content: none;
+      }
+    }
+  }
+}

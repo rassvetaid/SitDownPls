@@ -1,0 +1,17 @@
+.top-categories {
+  &-list {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  &-item {
+    min-height: 511px;
+
+    &-1 {
+      grid-column: span 6;
+    }
+
+    &-2 {
+      order: 3;
+    }
+  }
+}

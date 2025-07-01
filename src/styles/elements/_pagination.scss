@@ -1,0 +1,27 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $pagination-gap;
+    font-size: 0;
+  }
+
+  &-active,
+  &-link {
+    display: block;
+    border: 2px solid $medium-purple;
+    border-radius: 10px;
+    padding: 5px 9px 5px 10px;
+  }
+
+  &-active {
+    border-color: transparent;
+    background-color: $primary-shade;
+  }
+}

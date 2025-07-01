@@ -1,0 +1,34 @@
+.navchain {
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0;
+  }
+
+  &-item {
+    &:not(:last-child)::after {
+      content: "/";
+      position: relative;
+      padding-right: 4px;
+      font-size: $text-small;
+      color: $grey;
+      z-index: 2;
+    }
+  }
+
+  &-link {
+    margin-right: 5px;
+
+    &-1 {
+      margin-right: 7px;
+    }
+
+    &-3 {
+      margin-right: 4px;
+    }
+
+    &-4 {
+      margin-right: 6px;
+    }
+  }
+}

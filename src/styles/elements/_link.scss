@@ -1,0 +1,73 @@
+.link {
+  &-grey {
+    position: relative;
+    display: inline-block;
+    outline: none;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    z-index: 1;
+
+    @include left-right-pseudo(10px);
+
+    &:focus-visible {
+      color: $primary-shade;
+
+      &::before {
+        background-color: $pink-violet;
+      }
+    }
+
+    @media (any-hover: hover) {
+      &:hover:not(:focus-visible):not(:active) {
+        color: $medium-purple;
+      }
+    }
+
+    &:active:not(:focus-visible) {
+      color: $primary-shade;
+    }
+  }
+
+  &-underline {
+    outline: none;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+    transition: text-decoration-color 0.3s ease-in-out;
+
+    &:focus-visible {
+      text-decoration-color: $medium-purple;
+    }
+
+    @media (any-hover: hover) {
+      &:hover:not(:focus-visible):not(:active) {
+        text-decoration-color: $medium-purple;
+      }
+    }
+
+    &:active:not(:focus-visible) {
+      color: $primary-shade;
+      text-decoration-color: $primary-shade;
+    }
+  }
+
+  &-short {
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+
+    &:focus-visible {
+      outline: none;
+      color: $crusta;
+      background-color: $bone;
+    }
+
+    @media (any-hover: hover) {
+      &:hover:not(:focus-visible):not(:active) {
+        color: $secondary-light;
+      }
+    }
+
+    &:active:not(:focus-visible) {
+      color: $primary-shade;
+    }
+  }
+}

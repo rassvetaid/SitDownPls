@@ -1,0 +1,38 @@
+.header {
+  padding-bottom: 28px;
+
+  &-index {
+    padding-bottom: 32px;
+  }
+
+  &-container {
+    grid-template-columns: repeat(6, 1fr);
+    gap: $header-gap;
+    padding: 0 68px;
+  }
+
+  &-phone,
+  &-side,
+  &-nav,
+  &-search {
+    grid-column: span 6;
+  }
+
+  &-logo,
+  &-box {
+    grid-column: span 3;
+  }
+
+  &-logo {
+    order: 3;
+  }
+
+  &-box {
+    order: 4;
+    padding: 7px 4px 0 0;
+  }
+
+  &-cart-count {
+    padding: 2px 4px 2px;
+  }
+}

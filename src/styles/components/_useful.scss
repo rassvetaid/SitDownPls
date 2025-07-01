@@ -1,0 +1,57 @@
+.useful {
+  padding: 33px 0;
+
+  &-title {
+    margin-bottom: 23px;
+  }
+
+  &-list {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: $useful-gap;
+  }
+
+  &-item {
+    grid-column: span 6;
+  }
+
+  &-article {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+    border-radius: 10px;
+    height: 100%;
+    min-height: 676px;
+    background-color: $grey-light;
+    overflow: hidden;
+    @include text-rubber;
+  }
+
+  &-pic {
+    margin-bottom: 1px;
+    max-height: 426px;
+  }
+
+  &-img {
+    @include width-height(100%, 100%);
+    object-fit: cover;
+  }
+
+  &-subtitle {
+    margin-bottom: auto;
+    padding: 30px 27px 10px 30px;
+    line-height: 33px;
+  }
+
+  &-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $btn-wrap-gap;
+    padding: 0 30px;
+  }
+
+  &-link {
+    padding: 16px 34px 15px 33px;
+    max-width: max-content;
+  }
+}

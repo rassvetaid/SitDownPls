@@ -1,0 +1,78 @@
+.product {
+  padding: 9px 0 25px;
+
+  &-container {
+    gap: $product-gap;
+  }
+
+  &-buy {
+    padding: 0 0 3px;
+  }
+
+  &-title {
+    margin-bottom: 7px;
+    font-size: $title-small;
+  }
+
+  &-reting {
+    margin-bottom: 5px;
+    padding-left: 23px;
+    font-size: $text-normal;
+    background-image: url(../img/star.webp);
+  }
+
+  &-text {
+    margin-bottom: 16px;
+    font-size: $text-small-lg;
+  }
+
+  &-price {
+    margin-bottom: 17px;
+    font-size: $title-normal;
+  }
+
+  &-buy-btn {
+    padding: 16px 66px 15px 66.1px;
+  }
+
+  &-wrap {
+    align-items: center;
+  }
+
+  &-about {
+    grid-column: span 6;
+  }
+
+  &-subtitle {
+    font-size: $title-small;
+  }
+
+  &-img-box {
+    gap: $product-img-box-gap;
+  }
+
+  &-subpic {
+    &-1 {
+      position: relative;
+      left: -1px;
+    }
+  }
+
+  &-list {
+    gap: $product-settings-row-gap;
+    padding: 20px 0 4px;
+  }
+
+  &-item {
+    flex-wrap: wrap;
+    row-gap: $product-item-gap;
+  }
+
+  &-left {
+    font-size: $text-tiny;
+  }
+
+  &-right {
+    font-size: $text-small-lg;
+  }
+}

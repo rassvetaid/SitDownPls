@@ -1,0 +1,19 @@
+.your-benefits {
+  padding: 18px 0 16px;
+
+  &-title {
+    margin-bottom: 15px;
+    font-size: $title-tiny;
+    letter-spacing: 0.02px;
+  }
+
+  &-subtitle {
+    margin-bottom: 13px;
+    font-size: $title-small;
+  }
+
+  &-text {
+    max-width: 100%;
+    line-height: 179%;
+  }
+}

@@ -1,0 +1,40 @@
+.catalog {
+  padding: 2px 0 70px;
+
+  &-container {
+    grid-template-columns: repeat(9, 1fr);
+    gap: $catalog-gap;
+  }
+
+  &-title {
+    margin-bottom: 0;
+
+    &-media-1024 {
+      display: block;
+    }
+
+    &-media-1920 {
+      display: none;
+    }
+  }
+
+  &-title,
+  &-filter,
+  &-box {
+    grid-column: span 9;
+  }
+
+  &-box {
+    padding-top: 0;
+  }
+
+  &-list {
+    grid-template-columns: repeat(9, 1fr);
+    gap: $catalog-card-gap;
+    margin-bottom: 32px;
+  }
+
+  &-link {
+    padding: 16px 33px 15px;
+  }
+}

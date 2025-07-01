@@ -1,0 +1,62 @@
+.arrow-link {
+  position: relative;
+  padding: 5px 30px 5px 0;
+  max-width: max-content;
+
+  &::after,
+  &-svg {
+    position: absolute;
+    top: 50%;
+    right: 3px;
+    @include width-height(22px, 22px);
+    transform: translateY(-50%);
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    border: 2px solid $medium-purple;
+    border-radius: 100%;
+    transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    z-index: 0;
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:focus-visible::after {
+    background-color: $mauve;
+  }
+
+  &:focus-visible .arrow-link-svg {
+    stroke: $white;
+  }
+
+  @media (any-hover: hover) {
+    &:hover:not(:focus-visible):not(:active)::after {
+      border-color: transparent;
+      background-color: $medium-purple;
+    }
+
+    &:hover:not(:focus-visible):not(:active) .arrow-link-svg {
+      stroke: $white;
+    }
+  }
+
+  &:active:not(:focus-visible)::after {
+    border-color: transparent;
+    background-color: $primary-shade;
+  }
+
+  &:active:not(:focus-visible) .arrow-link-svg {
+    stroke: $white;
+  }
+
+  &-svg {
+    stroke: #a65cf0;
+    stroke-width: 2;
+    transition: stroke 0.3s ease-in-out;
+    z-index: 1;
+  }
+}

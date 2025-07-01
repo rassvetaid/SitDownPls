@@ -1,0 +1,29 @@
+.nav {
+  position: relative;
+  margin: 0 -12px;
+  padding: 17px 0 12px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: $grey-light;
+  }
+
+  &-list {
+    flex-wrap: nowrap;
+    gap: $nav-gap;
+    padding: 0 12px;
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-width: none;
+
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.footer-menu {
+  justify-self: end;
+
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $footer-menu-gap;
+    padding: 2px 2px;
+  }
+
+  &-item {
+    &-2 {
+      min-width: 154px;
+    }
+
+    &-3 {
+      min-width: 141px;
+    }
+  }
+
+  &-title {
+    margin-bottom: 2px;
+  }
+
+  &-sublist {
+    display: flex;
+    flex-direction: column;
+    gap: $footer-sublist-gap;
+  }
+}

@@ -1,0 +1,62 @@
+.card-categories {
+  display: flex;
+  flex-direction: column;
+  padding: 27px 0;
+  border-radius: 10px;
+  height: 100%;
+  background-color: $grey-light;
+  @include text-rubber;
+
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $card-categories-gap;
+    margin-bottom: auto;
+
+    &-4 {
+      gap: 10px 26px;
+    }
+
+    &-5 {
+      gap: 10px 42px;
+    }
+  }
+
+  &-list,
+  &-title {
+    padding: 0 30px;
+  }
+
+  &-title {
+    margin-bottom: 31px;
+    padding-top: 10px;
+  }
+
+  &-pic {
+    margin-bottom: 27px;
+    max-width: 100%;
+    height: 202px;
+
+    &-lg {
+      height: 308px;
+    }
+
+    &-4 {
+      position: relative;
+      left: -1px;
+    }
+  }
+
+  &-img {
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+  }
+
+  &-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $btn-wrap-gap;
+    padding: 0 30px;
+  }
+}

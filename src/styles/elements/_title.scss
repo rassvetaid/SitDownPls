@@ -1,0 +1,59 @@
+.title {
+  margin: 0;
+  font-size: $title-normal;
+  font-weight: 400;
+  color: $black;
+  @include text-rubber;
+
+  &-huge {
+    font-size: $title-huge;
+  }
+
+  &-big {
+    font-size: $title-big;
+  }
+
+  &-small {
+    font-size: $title-small;
+  }
+
+  &-small-sm {
+    font-size: $title-small-sm;
+  }
+
+  &-tiny {
+    font-size: $title-tiny;
+  }
+
+  &-grey {
+    color: $grey;
+  }
+
+  &-grey-shade {
+    color: $grey-shade;
+  }
+
+  &-white {
+    color: $white;
+  }
+
+  &-gold {
+    color: $gold;
+  }
+
+  &-crusta {
+    color: $crusta;
+  }
+
+  &-semi-bold {
+    font-weight: 600;
+  }
+
+  &-bold {
+    font-weight: 700;
+  }
+
+  &-black {
+    font-weight: 900;
+  }
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SitDownPls</title>
+  <link href="img/favicon.svg" rel="icon" type="image/svg+xml">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/indexmain.css" rel="stylesheet">
+</head>
+
+<body class="page">
+  <header class="header header-index">
+    @@include('pattern/header.html')
+  </header>
+
+  <main class="main">
+
+    <!-- hero -->
+    <section class="hero" id="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h2 class="title title-big title-grey title-bold hero-title">
+            Скидка 15% на первую покупку
+          </h2>
+        </div>
+        <div class="hero-wrap">
+          <button class="btn-reset btn btn-big btn-medium-purple hero-btn">
+            Получить!
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- special -->
+    <section class="special" id="special">
+      @@include('pattern/special.html')
+    </section>
+
+    <!-- top-tovar -->
+    <section class="top-tovar" id="top-tovar">
+      @@include('pattern/top-tovar.html')
+    </section>
+
+    <!-- oxford -->
+    <section class="oxford" id="oxford">
+      <div class="container oxford-container">
+        <div class="oxford-content">
+          <h2 class="font-second title title-huge title-gold title-black oxford-title">
+            Оксфорд 1950
+          </h2>
+          <p class="title title-big title-white oxford-text">
+            Новая коллекция изысканных кресел
+          </p>
+        </div>
+        <div class="oxford-wrap">
+          <a class="btn btn-big btn-medium-purple oxford-link" href="#">
+            Ознакомиться
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- top-categories -->
+    <section class="top-categories" id="top-categories">
+      @@include('pattern/top-categories.html')
+    </section>
+
+    <!-- useful -->
+    <section class="useful" id="useful">
+      @@include('pattern/useful.html')
+    </section>
+
+    <!-- feedback -->
+    <section class="feedback" id="feedback">
+      <div class="container feedback-container">
+        <div class="feedback-left">
+          <h2 class="title feedback-title" id="form-title">
+            Мы всегда вам рады!
+          </h2>
+          <p class="text text-small text-grey-shade feedback-text">
+            Безусловно, новая модель организационной деятельности в значительной степени обусловливает важность
+            распределения внутренних резервов и ресурсов.
+          </p>
+          <fieldset class="fieldset-reset feedback-fieldset" aria-labelledby="form-title">
+            <form class="feedback-form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+              <label class="feedback-label">
+                <input class="input input-long feedback-input" type="text" name="name" placeholder="Как вас зовут?"
+                  autocomplete="on" required>
+              </label>
+              <label class="feedback-label">
+                <input class="input input-long feedback-input" type="tel" name="phone" placeholder="Ваш телефон"
+                  autocomplete="on">
+              </label>
+              <label class="feedback-label">
+                <input class="input input-long feedback-input" type="email" name="email" placeholder="Ваш e-mail"
+                  autocomplete="on" required>
+              </label>
+              <div class="feedback-wrap">
+                <button class="btn-reset btn btn-big btn-medium-purple btn-semi-bold feedback-btn">
+                  Отправить
+                </button>
+              </div>
+              <label class="checkbox feedback-checkbox-label">
+                <input class="checkbox-input feedback-checkbox-input" type="checkbox" name="rules" checked>
+                <span class="checkbox-span text text-small text-black feedback-checkbox-span">
+                  Принимаю
+                  <a class="checkbox-link text text-small text-medium-purple link link-short feedback-checkbox-link"
+                    href="#">
+                    пользовательское соглашение
+                  </a>
+                </span>
+              </label>
+            </form>
+          </fieldset>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    @@include('pattern/footer.html')
+  </footer>
+</body>
+
+</html>

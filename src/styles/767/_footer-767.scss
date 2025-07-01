@@ -1,0 +1,36 @@
+.footer {
+  &-container {
+    row-gap: $footer-gap;
+  }
+
+  &-top {
+    padding: 24px 0 22px;
+  }
+
+  &-left {
+    justify-content: center;
+    row-gap: $footer-left-gap;
+  }
+
+  &-pic {
+    margin-right: 0;
+    padding-top: 0;
+    padding-right: 1px;
+  }
+
+  &-social-list {
+    justify-content: center;
+    padding: 0;
+    padding-left: 1px;
+    width: 100%;
+  }
+
+  &-nav {
+    justify-self: start;
+    width: 100%;
+  }
+
+  &-copyright {
+    @include text-rubber;
+  }
+}
